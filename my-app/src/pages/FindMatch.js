@@ -12,7 +12,7 @@ const FindMatch = () => {
     useEffect(() => {
         const icon = localStorage.getItem("icon") || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxtOsvR4mTPFRQWBgkLD20taZHtg1WTN0VA&s";
 
-        socket = io(ENDPOINT);
+        socket = io(ENDPOINT, { withCredentials: true, });
         socket.on("connect", () => {
             console.log("client socket : ", socket.id);
         })

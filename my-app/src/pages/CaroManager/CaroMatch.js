@@ -140,7 +140,7 @@ const CaroMatch = () => {
 
 
     useEffect(() => {
-        socket = io(ENDPOINT);
+        socket = io(ENDPOINT, { withCredentials: true, });
         const icon = localStorage.getItem("icon") || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxtOsvR4mTPFRQWBgkLD20taZHtg1WTN0VA&s";
 
 
