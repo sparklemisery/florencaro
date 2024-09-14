@@ -2,7 +2,7 @@ import { io } from "socket.io-client";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-const ENDPOINT = "http://localhost:6969";
+const ENDPOINT = "https://florencaro.onrender.com";
 var socket;
 
 const FindMatch = () => {

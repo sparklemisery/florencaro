@@ -10,7 +10,7 @@ import EndGame from './EndGame';
 import FriendFind from './FriendFind';
 import FriendWait from './FriendWait';
 
-const ENDPOINT = "http://localhost:6969";
+const ENDPOINT = "https://florencaro.onrender.com";
 var socket;
 var flag = false;
 
