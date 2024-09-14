@@ -4,7 +4,7 @@ import { ToastContainer, toast, Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const FriendFind = ({ pass }) => {
-    const [path, setPath] = useState("http://localhost:3000" + useLocation().pathname + '/' + pass);
+    const [path, setPath] = useState("https://florencaro.onrender.com" + useLocation().pathname + '/' + pass);
     const handleCopy = (e) => {
         navigator.clipboard.writeText(path).then(() => {
             toast('🦄 copy successfully!', {
