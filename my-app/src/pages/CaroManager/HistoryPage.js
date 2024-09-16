@@ -62,7 +62,7 @@ function HistoryPage() {
 
                                             return <tr class="bg-white/60 backdrop-blur-sm text-gray-900 border-b dark:bg-gray-800 dark:border-gray-700">
                                                 <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap dark:text-white">
-                                                    {item.player_1.nickname} <br></br> {item.player_2.nickname}
+                                                    {item.player_1.nickname ? item.player_1.nickname : null} <br></br> {item.player_2.nickname ? item.player_2.nickname : null}
                                                 </th>
                                                 <td class="px-6 py-4">
                                                     {item.moves.map((move, index) => {
